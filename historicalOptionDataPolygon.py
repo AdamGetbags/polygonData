@@ -20,6 +20,8 @@ from plotly.offline import plot
 
 #api key from config
 from polygonAPIkey import polygonAPIkey
+# OR just assign your API as a string variable
+# polygonAPIkey = 'apiKeyGoesHere'
 
 #create client and authenticate w/ API key // rate limit 5 requests per min
 client = RESTClient(polygonAPIkey) # api_key is used
