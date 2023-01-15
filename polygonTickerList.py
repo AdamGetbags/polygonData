@@ -97,3 +97,5 @@ for x in exchangeList:
     # print exchange when finished   
     print(x)
         
+# final ticker list
+finalTickerList = set(usTickers)
