@@ -65,7 +65,7 @@ mktData = pd.DataFrame(client.get_grouped_daily_aggs(date='2023-01-13'))
 # allTickers = []
 # # page through response
 # for t in client.list_tickers(market='stocks', 
-#                               active=False,
+#                               active=True,
 #                               limit=1000):
 # # add to list
 #     allTickers.append(t.ticker)
@@ -90,7 +90,7 @@ for x in exchangeList:
     # page through response
     for t in client.list_tickers(market='stocks',
                                  exchange=x,
-                                 active=False,
+                                 active=True,
                                  limit=1000):
         # add to list
         usTickers.append(t.ticker)
